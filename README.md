@@ -1,5 +1,5 @@
 # snowflake.js
-![screenshot](https://github.com/e1y4r/snowflake/blob/main/screenshot.png)
+![screenshot](https://s4.ax1x.com/2022/02/08/H356r8.png)
 
 生成随机雪花
 
