@@ -694,8 +694,8 @@ customElements.define(
       // 雪花上图形的间距
       let dec_distance = snowflake_radius / branch_dec_count;
 
-      for (var j = branch_dec_count - 1; j >= 0; j--) {
-        // 由外向内添加雪花的图形
+      for (var j = 0; j < branch_dec_count; j++) {
+        // 由内向外添加雪花的图形
         // 极坐标长度
         var r = dec_distance * j;
 
