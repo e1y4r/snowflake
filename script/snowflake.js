@@ -552,15 +552,6 @@ let color_palette = [
   "#81776e",
 ];
 
-// 从待选颜色中选择color_count个颜色加入color_map
-var color_map = [];
-for (var i = 0; i < color_count; i++) {
-  var color =
-    color_palette[Math.floor(random() * color_palette.length)] + alpha;
-
-  color_map.push(color);
-}
-
 // SVG-创建圆形
 function createCircle(cx, cy, r, fill) {
   const circle = document.createElementNS(
@@ -669,6 +660,14 @@ customElements.define(
       let width = this.getAttribute("width");
       let height = this.getAttribute("height");
 
+      // 从待选颜色中选择color_count个颜色加入color_map
+      var color_map = [];
+      for (var i = 0; i < color_count; i++) {
+        var color =
+          color_palette[Math.floor(random() * color_palette.length)] + alpha;
+
+        color_map.push(color);
+      }
       // 创建SVG
       const snowflakeSVG = document.createElementNS(
         "http://www.w3.org/2000/svg",
