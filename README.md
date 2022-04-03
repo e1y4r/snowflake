@@ -2,7 +2,7 @@
 
 A JavaScript program to generate random snowflakes in SVG format.
 
-![screenshot](https://s3.bmp.ovh/imgs/2022/04/02/f1dfee8fb33920a9.png)
+![](screenshot.png)
 
 Usage:
 ```html
